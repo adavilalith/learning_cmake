@@ -1,0 +1,105 @@
+# ==========================================
+# 1. CMake & Build Directories
+# ==========================================
+# Standard out-of-source build directories
+/build/
+/build*/
+/out/
+/cmake-build-*/
+
+# CMake generated files (in case of accidental in-source build)
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+
+# CMake User Presets (local configurations that shouldn't be shared)
+# Keep CMakePresets.json tracked, but ignore user overrides:
+CMakeUserPresets.json
+
+# Tooling / FetchContent dependencies
+_deps/
+
+# ==========================================
+# 2. C++ Dynamic & Static Artifacts
+# ==========================================
+# Object files
+*.o
+*.obj
+*.ko
+*.elf
+
+# Precompiled headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lai
+*.so
+*.so.*
+*.dylib
+*.dll
+
+# Executables & Binaries
+*.exe
+*.out
+*.app
+
+# Debug symbols & database files
+*.pdb
+*.idb
+*.dSYM/
+*.su
+*.dwo
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# ==========================================
+# 3. Package Managers & Dependencies
+# ==========================================
+# vcpkg local installation directory
+vcpkg_installed/
+
+# Conan cache / generator outputs
+conan.lock
+conanbuildinfo.cmake
+conaninfo.txt
+graph_info.json
+
+# ==========================================
+# 4. IDEs & Editors
+# ==========================================
+# Visual Studio
+/.vs/
+/.vscode/
+*.vcxproj.user
+
+# Visual Studio Code
+/.vscode/*
+!/.vscode/tasks.json
+!/.vscode/launch.json
+!/.vscode/settings.json
+
+# CLion / JetBrains
+/.idea/
+
+# QtCreator
+*.CMakeLists.txt.user*
+
+# Xcode
+*.xcodeproj/
+
+# OS-specific clutter
+.DS_Store
+Thumbs.db 
